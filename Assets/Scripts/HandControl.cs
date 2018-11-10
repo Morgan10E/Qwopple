@@ -26,7 +26,7 @@ public class HandControl : MonoBehaviour {
 		// float horizontal = Input.GetAxis(whichHand + "Horizontal");
 		// float vertical = Input.GetAxis(whichHand + "Vertical");
 
-		arm.linearOffset = -3 * mouse / mouse.magnitude;
+		arm.linearOffset = -mouse / 100;
 	}
 
 }
