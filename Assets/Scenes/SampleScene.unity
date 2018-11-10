@@ -400,7 +400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &253703493
 Rigidbody2D:
   serializedVersion: 4
@@ -538,6 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d3812bd558349d89263b72d5652ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyRigidBody: {fileID: 253703493}
   whichHand: Left
   radius: 1
   rigidBody: {fileID: 506003014}
@@ -594,7 +595,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506003010}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
