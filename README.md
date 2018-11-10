@@ -7,6 +7,7 @@ Grapple hooks are the best. This is a well-established game design fact. Ragdoll
 3. Restart your computer.
 4. Go to System Preferences -> Xbox 360 Controllers, and go to Advanced. Enable the drivers (Looks like you might have to do this every time you restart your computer? I'm still trying to figure this out). If you plug in a controller, the computer should be able to find it and you can test all the inputs in this menu.
 
+## Unity Stuff
 ### Adding Input Fields
 If you want to add more buttons to push, in Unity:
 1. Edit->Project Settings->Input. The Input Manager should open on the right side of Unity.
