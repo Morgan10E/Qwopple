@@ -14,7 +14,9 @@ public class Rebound : MonoBehaviour {
 		
 	}
 
-	void OnCollision2D(Collision2D collision) {
+	void OnCollisionExit2D(Collision2D collision) {
+		// the velocity of the object hitting us, relatively; in this case absolute since the rebound box
+		Vector3 relativeVelocity = collision.relativeVelocity;
 		
 	}
 }
