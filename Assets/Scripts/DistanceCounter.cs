@@ -17,6 +17,6 @@ public class DistanceCounter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		distanceCounter.text = (player.transform.position.x - playerStartingPosition).ToString("0.##");
+		distanceCounter.text = (player.transform.position.x - playerStartingPosition).ToString("0.0");
 	}
 }

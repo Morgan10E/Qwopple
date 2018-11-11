@@ -38,6 +38,7 @@ public class Spawner : MonoBehaviour {
 	void Update () {
 		if (Time.time > nextSpawn) {
 			GameObject debris = Instantiate(debrisPrefabs[Random.Range(0, debrisPrefabs.Length)]);
+			// debris.transform.parent = transform;
 			float scale = Random.Range(minScale, maxScale);
 			float speed = Random.Range(minSpeed, maxSpeed);
 			debris.transform.localScale = new Vector3(scale, scale, 1);
