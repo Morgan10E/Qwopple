@@ -1294,6 +1294,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 253703492}
+    - target: {fileID: 114559128784226082, guid: 23a75370b1a6a43359e681f3f9593a23,
+        type: 2}
+      propertyPath: maxAngularSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23a75370b1a6a43359e681f3f9593a23, type: 2}
   m_IsPrefabAsset: 0
