@@ -51,8 +51,8 @@ public class Spawner : MonoBehaviour {
 
 			nextSpawn = Time.time + timeBetweenSpawns;
 
-			minSpeed += 0.2f;
-			maxSpeed += 0.2f;
+			minSpeed = Mathf.Min(10f, minSpeed + 0.2f);
+			maxSpeed = Mathf.Min(20f, maxSpeed + 0.2f);
 			maxAngularSpeed += 0.02f;
 			timeBetweenSpawns = Mathf.Max(0.15f, timeBetweenSpawns - 0.01f);
 		}

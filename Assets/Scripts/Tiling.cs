@@ -24,13 +24,14 @@ public class Tiling : MonoBehaviour {
 		SpriteRenderer sr = GetComponent<SpriteRenderer>();
 		spriteSize = sr.bounds.size;
 
-		tileManager.PlaceTile(transform);
+		// tileManager.PlaceTile(transform);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		// if this piece is surrounded by tiles, or the camera isn't in our tile, we don't do anything
 		if (hasNorthTile && hasEastTile && hasSouthTile && hasWestTile) return;
+		// if (Vector2.Distance(transform.position, mainCam.transform.position) > 150f) return;
 	
 		if (!hasEastTile || !hasWestTile) {
 			float camHorizontalExtend = mainCam.orthographicSize * Screen.width / Screen.height;
@@ -82,7 +83,7 @@ public class Tiling : MonoBehaviour {
 			newTile = tileManager.PlacedTile(newPosition);
 		} else {
 			newTile = Instantiate(transform, newPosition, transform.rotation);
-			// tileManager.PlaceTile(newTile);
+			tileManager.PlaceTile(newTile);
 		} 
 		newTile.parent = transform.parent;
 

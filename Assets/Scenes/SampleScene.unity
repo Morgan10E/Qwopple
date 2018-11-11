@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7831b0bce3441048f40338e5536c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 2
+  offset: 4
   hasNorthTile: 0
   hasEastTile: 0
   hasSouthTile: 0
