@@ -50,6 +50,11 @@ public class Spawner : MonoBehaviour {
 			rb.angularVelocity = Random.Range(-maxAngularSpeed, maxAngularSpeed);
 
 			nextSpawn = Time.time + timeBetweenSpawns;
+
+			minSpeed += 0.2f;
+			maxSpeed += 0.2f;
+			maxAngularSpeed += 0.02f;
+			timeBetweenSpawns = Mathf.Max(0.15f, timeBetweenSpawns - 0.01f);
 		}
 	}
 }

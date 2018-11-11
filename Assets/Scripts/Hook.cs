@@ -17,7 +17,7 @@ public class Hook : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Release the bumper to let go of the object
-		if (hooked && !Input.GetButton(which + "Bumper")) {
+		if (hooked && Input.GetButton(which + "Bumper")) {
 			hookAttachJoint.enabled = false;
 			hooked = false;
 		}
@@ -25,7 +25,7 @@ public class Hook : MonoBehaviour {
 
 	// Hold down the bumper to attach to an object on hit
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (hooked || !Input.GetButton(which + "Bumper")) { return; }
+		if (hooked || Input.GetButton(which + "Bumper")) { return; }
 		hooked = true;
 		Rigidbody2D collidingRb = collision.gameObject.GetComponent<Rigidbody2D>();
 		hookAttachJoint.connectedBody = collidingRb;
